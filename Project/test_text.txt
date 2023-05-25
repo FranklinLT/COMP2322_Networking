@@ -1,0 +1,22 @@
+---------for browser----------
+http://localhost:8000/index.html
+http://localhost:8000/nofile.html
+http://localhost:8000/304test.html
+http://localhost:8000/404test.html
+http://localhost:8000/
+
+
+---------for code client----------
+GET /helloworld.html HTTP:/1.1
+HEAD /helloworld.html HTTP:/1.1
+
+
+GET /index.html HTTP/1.1\nHost: localhost:8000\nConnection: keep-alive\nif-modified-since: Wed, 5 Apr 2023 01:22:03 GMT   （200）
+GET /no.html HTTP/1.1\nHost: localhost:8000\nConnection: keep-alive\nif-modified-since: Wed, 5 Apr 2023 01:22:03 GMT       (404)
+HEAD /no.html HTTP/1.1\nHost: localhost:8000\nConnection: keep-alive\nif-modified-since: Wed, 5 Apr 2023 01:22:03 GMT      (404)
+CATCH /no.html HTTP/1.1\nHost: localhost:8000\nConnection: keep-alive\nif-modified-since: Wed, 5 Apr 2023 01:22:03 GMT     (400)
+HEAD /index.html HTTP/1.1\nHost: localhost:8000\nConnection: keep-alive\nif-modified-since: Wed, 5 Apr 2023 01:22:03 GMT   (200) 
+
+GET /index.html HTTP/1.1\nHost: localhost:8000\nConnection: keep-alive\nif-modified-since: Wed, 12 Apr 2023 01:22:03 GMT   (304)
+HEAD /index.html HTTP/1.1\nHost: localhost:8000\nConnection: keep-alive\nif-modified-since: Wed, 12 Apr 2023 01:22:03 GMT  (304)
+HEAD /picture.png HTTP/1.1\nHost: localhost:8000\nConnection: keep-alive\nif-modified-since: Wed, 12 Apr 2023 01:22:03 GMT (304)

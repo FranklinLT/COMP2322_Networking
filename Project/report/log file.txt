@@ -1,0 +1,7 @@
+--------------------------------------------------log file------------------------------------------------
+Hostname/IP address      access time                     requested file name       response type
+127.0.0.1                Sat, 15 Apr 2023 04:34:40 GMT   nofile.html               HTTP/1.1 404 Not Found
+127.0.0.1                Sat, 15 Apr 2023 04:34:40 GMT   index.html                HTTP/1.1 200 OK
+127.0.0.1                Sat, 15 Apr 2023 04:34:40 GMT   helloworld.html           HTTP/1.1 200 OK
+127.0.0.1                Sat, 15 Apr 2023 04:34:50 GMT   picture.png               HTTP/1.1 200 OK
+127.0.0.1                Sat, 15 Apr 2023 04:35:00 GMT   index.html                HTTP/1.1 200 OK
